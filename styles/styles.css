@@ -81,7 +81,7 @@ hr{
             margin-left: 25px;
         }
 }
-@media screen and (max-width: 1024px){
+@media screen and (min-width:641) and (max-width: 1024px){
             .gen-card{
             margin: 10px 315px 10px 315px;
             box-shadow: 8px 8px 20px 0px rgba(85, 85, 85, 0.08);
