@@ -28,6 +28,7 @@ body {
     margin: 25px 550px 25px 550px;
     box-shadow: 8px 8px 20px 0px rgba(85, 85, 85, 0.08);
     border-radius: 10px;
+    padding-top: 10px;
 }
 .img-cact{
     display: grid;
@@ -66,5 +67,32 @@ hr{
     padding-bottom: 15px;
     margin-left: 50px;
 }
-
-
+@media screen and (max-width: 640px){
+        .gen-card{
+            margin: 100px 150px 100px 110px;
+            box-shadow: 8px 8px 20px 0px rgba(85, 85, 85, 0.08);
+            border-radius: 10px;
+            padding-top: 10px;
+        }
+        .etiqueta{
+            margin-left: 25px;
+        }
+        .describ{
+            margin-left: 25px;
+        }
+}
+@media screen and (max-width: 1024px){
+            .gen-card{
+            margin: 10px 315px 10px 315px;
+            box-shadow: 8px 8px 20px 0px rgba(85, 85, 85, 0.08);
+            border-radius: 10px;
+            padding-top: 10px;
+        }
+        .etiqueta{
+            margin-left: 28px;
+        }
+        .describ{
+            margin-left: 28px;
+        }
+    
+}
