@@ -13,19 +13,26 @@
 
 body {
     height: 100vh;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .author-info {
     font-size: 14px;
     text-align: center;
     margin-top: 16px;
     color: rgb(55, 65, 81);
+    padding-bottom: 30px;
 }
-
 .author-info a {
     text-decoration: none;
 }
 .gen-card{
-    margin: 25px 550px 25px 550px;
+    width: 100%;
+    max-width: 368px;
+    /*margin: 25px 550px 25px 550px;*/
     box-shadow: 8px 8px 20px 0px rgba(85, 85, 85, 0.08);
     border-radius: 10px;
     padding-top: 10px;
@@ -35,6 +42,9 @@ body {
     place-items: center; /*Centrar imagen*/
 }
 img{
+    width: 100%; /*cubre todo el ancho del div*/
+    max-width: 336px;
+    height: auto;
     border-radius: 18px;
     padding: 15px 0 15px 0;
 }
@@ -45,17 +55,19 @@ img{
     border-radius: 30px;
     padding: 6px 10px;
     margin-bottom: 10px;
-    margin-left: 50px;
+    margin-left: 16px;
 }
 .describ h1{
     margin-bottom: 10px;
     color: black;
+    font-size: 18px;
 }
 .describ{
     font-size: 12px;
-    margin-left: 50px;
+    margin-left: 16px;
     color: rgb(62, 68, 75);
     padding-bottom: 15px;
+    line-height: 1.5;;
 }
 hr{
     color: #E5EAF0;
@@ -65,34 +77,50 @@ hr{
     font-size: 12px;
     padding-top: 15px;
     padding-bottom: 15px;
-    margin-left: 50px;
+    margin-left: 16px;
 }
 @media screen and (max-width: 640px){
         .gen-card{
-            margin: 100px 150px 100px 110px;
-            box-shadow: 8px 8px 20px 0px rgba(85, 85, 85, 0.08);
-            border-radius: 10px;
-            padding-top: 10px;
+            max-width: 327px;
         }
-        .etiqueta{
-            margin-left: 25px;
+        img{
+            padding: 15px 16px;
+            max-width: 295px;
         }
-        .describ{
-            margin-left: 25px;
+        .etiqueta, .describ, .fin-aut{
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+        .describ h1{
+            font-size: 16px;
+        }
+        .describ p{
+            font-size: 12px;
         }
 }
 @media screen and (min-width:641) and (max-width: 1024px){
-            .gen-card{
-            margin: 10px 315px 10px 315px;
-            box-shadow: 8px 8px 20px 0px rgba(85, 85, 85, 0.08);
-            border-radius: 10px;
-            padding-top: 10px;
+        .gen-card{
+            max-width: 420px;
+            margin: 0 auto;
         }
-        .etiqueta{
-            margin-left: 28px;
+        img{
+            max-width: 368px;
         }
-        .describ{
-            margin-left: 28px;
+        .etiqueta, .describ, .fin-aut{
+            margin-left: 24px;
+            margin-right: 24px;
+        }    
+}
+@media screen and (min-width:1025) and (max-width: 1280px){
+        .gen-card{
+            max-width: 420px;
+            margin: 0 auto;
         }
-    
+        img{
+            max-width: 388px;
+        }
+        .etiqueta, .describ, .fin-aut{
+            margin-left: 24px;
+            margin-left: 24px;
+        }    
 }
